@@ -1,0 +1,2 @@
+model,model_type,test_samples,genuine_samples,fraudulent_samples,accuracy,precision,recall,f1_score,true_negative,false_positive,false_negative,true_positive,correct_predictions,incorrect_predictions,roc_auc
+XGBoost,XGBClassifier,3576,3403,173,0.9868568232662193,0.9565217391304348,0.7630057803468208,0.8488745980707395,3397,6,41,132,3529,47,0.9891714043541995

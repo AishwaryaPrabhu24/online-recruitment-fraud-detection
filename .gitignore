@@ -1,0 +1,36 @@
+﻿# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+# Virtual environments
+venv/
+env/
+.venv/
+# Environment variables
+.env
+.env.*
+!.env.example
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Logs and temporary files
+*.log
+temp/
+tmp/
+# Dataset - keep local, do not upload
+dataset/fake_job_postings.csv
+dataset/processed/cleaned_job_postings.csv
+# Generated training artifacts
+dataset/processed/results/smote_info.pkl
+dataset/processed/shap/shap_values.pkl
+dataset/processed/models/random_forest_model.pkl
+dataset/processed/models/linear_svm_model.pkl
+dataset/processed/models/xgboost_model.pkl
+dataset/processed/models/model_comparison_results.pkl

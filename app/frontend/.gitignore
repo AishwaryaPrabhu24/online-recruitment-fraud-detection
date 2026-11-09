@@ -1,0 +1,54 @@
+@'
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+temp/
+tmp/
+
+# Large generated training artifacts
+dataset/processed/cleaned_job_postings.csv
+dataset/processed/results/smote_info.pkl
+dataset/processed/shap/shap_values.pkl
+
+# Unnecessary generated model artifacts
+dataset/processed/models/random_forest_model.pkl
+dataset/processed/models/linear_svm_model.pkl
+dataset/processed/models/xgboost_model.pkl
+dataset/processed/models/model_comparison_results.pkl
+'@ | Set-Content .gitignore

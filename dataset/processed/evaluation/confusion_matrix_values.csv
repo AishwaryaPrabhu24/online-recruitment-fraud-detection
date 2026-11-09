@@ -1,0 +1,4 @@
+model,true_negative,false_positive,false_negative,true_positive
+Random Forest,3403,0,53,120
+SVM,3320,83,12,161
+XGBoost,3397,6,41,132

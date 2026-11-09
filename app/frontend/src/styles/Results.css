@@ -1,0 +1,717 @@
+
+.results-page {
+  min-height: 100vh;
+  color: #f4f6fb;
+  background: #080b12;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.results-header {
+  min-height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.results-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 0;
+  color: #f4f6fb;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.results-brand-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(248, 75, 93, 0.6);
+  border-radius: 9px;
+  color: #ff6574;
+  background: rgba(248, 75, 93, 0.1);
+}
+
+.results-home-link {
+  border: 0;
+  color: #a9b2c2;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.results-home-link:hover {
+  color: #fff;
+}
+
+.results-main {
+  width: min(1000px, 88%);
+  margin: 0 auto;
+  padding: 55px 0 70px;
+}
+
+.results-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #ff7b89;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.results-eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fa6170;
+}
+
+.results-main > h1 {
+  margin: 19px 0 12px;
+  font-size: clamp(36px, 5vw, 48px);
+  letter-spacing: -1.8px;
+}
+
+.results-main > h1 span {
+  color: #ff6676;
+}
+
+.results-subtitle {
+  max-width: 690px;
+  margin: 0 0 35px;
+  color: #9ca7ba;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.conclusion-card,
+.no-result-card {
+  padding: 28px;
+  border: 1px solid #303747;
+  border-radius: 12px;
+  background: #10141e;
+}
+
+.conclusion-card {
+  border-top: 2px solid #8d94a3;
+}
+
+.conclusion-fraud {
+  border-top-color: #f15b70;
+}
+
+.conclusion-legitimate {
+  border-top-color: #50c5a1;
+}
+
+.conclusion-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-overline {
+  color: #929db0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.conclusion-top h2 {
+  margin: 10px 0 0;
+  font-size: 30px;
+  letter-spacing: -0.6px;
+}
+
+.conclusion-fraud .conclusion-top h2 {
+  color: #ff7182;
+}
+
+.conclusion-legitimate .conclusion-top h2 {
+  color: #65d6b3;
+}
+
+.conclusion-symbol {
+  display: grid;
+  width: 53px;
+  height: 53px;
+  flex: 0 0 53px;
+  place-items: center;
+  border: 1px solid #3b4353;
+  border-radius: 50%;
+  color: #d7deea;
+  font-size: 25px;
+  font-weight: 800;
+  background: #191f2c;
+}
+
+.conclusion-fraud .conclusion-symbol {
+  border-color: rgba(241, 91, 112, 0.35);
+  color: #ff7182;
+  background: rgba(241, 91, 112, 0.1);
+}
+
+.conclusion-legitimate .conclusion-symbol {
+  border-color: rgba(80, 197, 161, 0.35);
+  color: #65d6b3;
+  background: rgba(80, 197, 161, 0.1);
+}
+
+.conclusion-message {
+  margin: 18px 0;
+  color: #b2bdce;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.uncertainty-note {
+  margin: 16px 0;
+  padding: 13px 15px;
+  border: 1px solid rgba(245, 180, 90, 0.25);
+  border-radius: 7px;
+  color: #f2cb8e;
+  background: rgba(245, 180, 90, 0.07);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.conclusion-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #8995a9;
+  font-size: 12px;
+}
+
+.conclusion-meta strong {
+  color: #dce3ef;
+}
+
+.result-section {
+  margin-top: 25px;
+  padding: 28px;
+  border: 1px solid #252b39;
+  border-radius: 12px;
+  background: #10141e;
+}
+
+.result-section-heading {
+  margin-bottom: 25px;
+}
+
+.result-section-heading h2 {
+  margin: 9px 0 8px;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+}
+
+.result-section-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: #929db0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.probability-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: 30px;
+}
+
+.probability-chart-card {
+  position: relative;
+  width: 100%;
+  max-width: 290px;
+  height: 250px;
+  justify-self: center;
+}
+
+.probability-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-center-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.chart-center-label strong {
+  color: #f4f6fb;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+
+.chart-center-label span {
+  margin-top: 5px;
+  color: #909caf;
+  font-size: 10px;
+}
+
+.chart-unavailable {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  color: #909caf;
+  font-size: 12px;
+  text-align: center;
+}
+
+.probability-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.probability-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #b7c1d0;
+  font-size: 12px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.fraud-dot {
+  background: #f15b70;
+}
+
+.legitimate-dot {
+  background: #50c5a1;
+}
+
+.probability-stat > strong {
+  font-size: 25px;
+  letter-spacing: -0.7px;
+}
+
+.fraud-value {
+  color: #ff7182;
+}
+
+.legitimate-value {
+  color: #65d6b3;
+}
+
+.stat-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #252c3a;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 300ms ease;
+}
+
+.fraud-fill {
+  background: #f15b70;
+}
+
+.legitimate-fill {
+  background: #50c5a1;
+}
+
+.probability-caption {
+  margin: 0;
+  color: #8792a6;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.risk-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.risk-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 17px;
+  border: 1px solid #2b3241;
+  border-radius: 8px;
+  background: #0b0f18;
+}
+
+.risk-summary-item span {
+  color: #929db0;
+  font-size: 11px;
+}
+
+.risk-summary-item strong {
+  color: #f4f6fb;
+  font-size: 25px;
+}
+
+.risk-summary-high strong {
+  color: #ff7182;
+}
+
+.risk-summary-medium strong {
+  color: #f3c36f;
+}
+
+.risk-summary-low strong {
+  color: #65d6b3;
+}
+
+.risk-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.risk-indicator {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.risk-high {
+  color: #ff7182;
+  background: rgba(241, 91, 112, 0.12);
+}
+
+.risk-medium {
+  color: #f3c36f;
+  background: rgba(243, 195, 111, 0.12);
+}
+
+.risk-low {
+  color: #65d6b3;
+  background: rgba(80, 197, 161, 0.12);
+}
+
+.risk-unknown {
+  color: #c0c8d6;
+  background: #252c3a;
+}
+
+.risk-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.risk-item-content h3 {
+  margin: 3px 0 7px;
+  color: #e7ebf3;
+  font-size: 13px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.risk-item-content p {
+  margin: 0;
+  color: #929db0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.risk-level {
+  margin-top: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.risk-level-high {
+  color: #ff7182;
+  background: rgba(241, 91, 112, 0.1);
+}
+
+.risk-level-medium {
+  color: #f3c36f;
+  background: rgba(243, 195, 111, 0.1);
+}
+
+.risk-level-low {
+  color: #65d6b3;
+  background: rgba(80, 197, 161, 0.1);
+}
+
+.risk-level-unknown {
+  color: #c0c8d6;
+  background: #252c3a;
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.term-row {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.term-rank {
+  color: #6e7a8e;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.term-name {
+  color: #e2e7f0;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.term-direction {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.term-fraud {
+  color: #ff7182;
+  background: rgba(241, 91, 112, 0.1);
+}
+
+.term-legitimate {
+  color: #65d6b3;
+  background: rgba(80, 197, 161, 0.1);
+}
+
+.empty-risk-list {
+  padding: 18px;
+  border: 1px dashed #343c4d;
+  border-radius: 8px;
+  color: #929db0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.results-disclaimer {
+  margin-top: 25px;
+  padding: 18px;
+  border: 1px solid rgba(245, 180, 90, 0.22);
+  border-radius: 8px;
+  color: #c3b18d;
+  background: rgba(245, 180, 90, 0.05);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.results-disclaimer strong {
+  color: #f2cb8e;
+}
+
+.results-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.results-primary-button,
+.results-secondary-button {
+  display: inline-flex;
+  min-height: 47px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 18px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.results-primary-button {
+  border: 1px solid #ff6676;
+  color: #fff;
+  background: #ed435b;
+}
+
+.results-primary-button:hover {
+  transform: translateY(-1px);
+  background: #fa5369;
+}
+
+.results-primary-button span {
+  font-size: 18px;
+}
+
+.results-secondary-button {
+  border: 1px solid #343b4a;
+  color: #c0c8d6;
+  background: #111620;
+}
+
+.results-secondary-button:hover {
+  background: #1b2230;
+}
+
+.no-result-card {
+  text-align: center;
+}
+
+.no-result-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 17px;
+  place-items: center;
+  border: 1px solid rgba(243, 195, 111, 0.3);
+  border-radius: 50%;
+  color: #f3c36f;
+  background: rgba(243, 195, 111, 0.08);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.no-result-card h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+
+.no-result-card > p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #9ca7ba;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.no-result-card .submitted-job {
+  color: #c6cfde;
+}
+
+.no-result-card .results-primary-button {
+  margin-top: 8px;
+}
+
+.results-footer {
+  padding: 23px 7%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #737e91;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+  .results-header {
+    min-height: 68px;
+    padding: 0 5%;
+  }
+
+  .results-main {
+    width: 90%;
+    padding: 42px 0 50px;
+  }
+
+  .results-section,
+  .result-section {
+    padding: 22px 17px;
+  }
+
+  .conclusion-card,
+  .no-result-card {
+    padding: 22px 18px;
+  }
+
+  .conclusion-top h2 {
+    font-size: 25px;
+  }
+
+  .probability-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .probability-chart-card {
+    height: 230px;
+  }
+
+  .probability-stats {
+    gap: 20px;
+  }
+
+  .risk-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .risk-item {
+    gap: 9px;
+  }
+
+  .risk-level {
+    font-size: 8px;
+  }
+
+  .term-row {
+    grid-template-columns: 27px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .term-direction {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .results-actions {
+    align-items: stretch;
+  }
+
+  .results-primary-button,
+  .results-secondary-button {
+    padding: 0 11px;
+    font-size: 10px;
+  }
+}

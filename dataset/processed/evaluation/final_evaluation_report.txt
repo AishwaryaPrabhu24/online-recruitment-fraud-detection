@@ -1,0 +1,66 @@
+============================================================
+MACHINE LEARNING BASED ONLINE RECRUITMENT FRAUD DETECTION
+FINAL MODEL EVALUATION REPORT
+============================================================
+
+TEST DATASET
+----------------------------------------
+Total test samples : 3576
+Genuine jobs       : 3403
+Fraudulent jobs    : 173
+Fraud percentage   : 4.84%
+
+MODEL PERFORMANCE
+----------------------------------------
+
+Random Forest
+Accuracy  : 0.9852
+Precision : 1.0000
+Recall    : 0.6936
+F1-Score  : 0.8191
+
+SVM
+Accuracy  : 0.9734
+Precision : 0.6598
+Recall    : 0.9306
+F1-Score  : 0.7722
+
+XGBoost
+Accuracy  : 0.9869
+Precision : 0.9565
+Recall    : 0.7630
+F1-Score  : 0.8489
+
+CONFUSION MATRIX VALUES
+----------------------------------------
+
+Random Forest
+True Negative  : 3403
+False Positive : 0
+False Negative : 53
+True Positive  : 120
+
+SVM
+True Negative  : 3320
+False Positive : 83
+False Negative : 12
+True Positive  : 161
+
+XGBoost
+True Negative  : 3397
+False Positive : 6
+False Negative : 41
+True Positive  : 132
+
+EVALUATION OUTPUTS
+----------------------------------------
+1. final_model_metrics.csv
+2. confusion_matrix_values.csv
+3. model_metrics_comparison.png
+4. recall_comparison.png
+5. f1_comparison.png
+6. confusion_matrices.png
+7. test_class_distribution.png
+
+STATUS: FINAL MODEL EVALUATION COMPLETED
+============================================================
